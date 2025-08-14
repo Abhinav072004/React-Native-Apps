@@ -58,8 +58,9 @@ export default function App() {
       const characterIndex = Math.round(Math.random() * characters.length)
       result += characters.charAt(characterIndex)
     }
+    console.log("Aayuu");
     return result
-    console.log("hitesh");
+    
     
   }
 
@@ -119,7 +120,7 @@ export default function App() {
          <View style={styles.inputWrapper}>
           <Text style={styles.heading}>Include lowercase</Text>
           <BouncyCheckbox
-          disableBuiltInState
+          useBuiltInState={false} 
           isChecked={lowerCase}
           onPress={() => setLowerCase(!lowerCase)}
           fillColor="#29AB87"
@@ -128,7 +129,7 @@ export default function App() {
          <View style={styles.inputWrapper}>
                   <Text style={styles.heading}>Include Uppercase letters</Text>
                   <BouncyCheckbox
-                    disableBuiltInState
+                    useBuiltInState={false} 
                     isChecked={upperCase}
                     onPress={() => setupperCase(!upperCase)}
                     fillColor="#FED85D"
@@ -137,7 +138,7 @@ export default function App() {
                 <View style={styles.inputWrapper}>
                   <Text style={styles.heading}>Include Numbers</Text>
                   <BouncyCheckbox
-                    disableBuiltInState
+                    useBuiltInState={false} 
                     isChecked={numbers}
                     onPress={() => setNumbers(!numbers)}
                     fillColor="#C9A0DC"
@@ -146,7 +147,7 @@ export default function App() {
                 <View style={styles.inputWrapper}>
                   <Text style={styles.heading}>Include Symbols</Text>
                   <BouncyCheckbox
-                    disableBuiltInState
+                    useBuiltInState={false} 
                     isChecked={symbols}
                     onPress={() => setSymbols(!symbols)}
                     fillColor="#FC80A5"
