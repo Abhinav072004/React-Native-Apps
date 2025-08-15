@@ -1,4 +1,5 @@
-import { ScrollView } from 'react-native/types_generated/index'
+import { ScrollView } from 'react-native'
+
 import { View, Text} from 'react-native'
 import React from 'react'
 import { SafeAreaView } from 'react-native-safe-area-context'
